@@ -19,7 +19,8 @@ public class PrintFileInput {
 			Matcher matcher=pattern.matcher(line);
 			while(matcher.find())
 			{
-				printWriter.println(matcher.group());
+				
+				System.out.println(matcher.group());
 			}
 			line=bufferedReader.readLine();
 		}
